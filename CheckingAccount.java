@@ -48,7 +48,7 @@ public class CheckingAccount {
             }
 
             this.balance -= x;
-            System.out.println("The balance after withdraw is: $" + String.format("%.2f", balance - x));
+            System.out.println("The balance after withdraw is: $" + String.format("%.2f", balance));
 
         } catch (InsufficientFundsException e) {
             System.out.println("Sorry, but your account is short by: $" + String.format("%.2f", e.getAmount() - this.balance));
